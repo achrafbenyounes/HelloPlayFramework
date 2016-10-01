@@ -19,5 +19,9 @@ public class HomeController extends Controller {
     public Result index() {
         return ok(index.render("My first play application to learn"));
     }
+    
+    public Result sayHello(String name) {
+    	return ok("Hello " + name);
+    }
 
 }
